@@ -1,0 +1,130 @@
+@mixin font($name, $path, $svg_id, $weight, $style) {
+  font-family: $name;
+  src: url($path + '.eot');
+  src: url($path + '.eot?#iefix') format('embedded-opentype'),
+  url($path + '.woff2') format('woff2'),
+  url($path + '.woff') format('woff'),
+  url($path + '.ttf') format('truetype'),
+  url($path + '.svg#' + $svg_id) format('svg');
+  font-weight: $weight;
+  font-style: $style;
+}
+
+
+@mixin transform($t) {
+  -moz-transform: $t;
+  -webkit-transform: $t;
+  -ms-transform: $t;
+  transform: $t;
+}
+
+@mixin transition($t) {
+  -moz-transition: $t;
+  -webkit-transition: $t;
+  -ms-transition: $t;
+  transition: $t;
+}
+
+
+@mixin opacity($value){
+  $IEValue: $value*100;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+  -moz-opacity: $value;
+  -khtml-opacity: $value;
+  -webkit-opacity: $value;
+  -o-opacity: $value;
+  opacity: $value;
+}
+
+@mixin scale($t) {
+
+  @include transform(scale($t));
+}
+
+@mixin transform-origin($t) {
+  -moz-transform-origin: $t;
+  -webkit-transform-origin: $t;
+  -ms-transform-origin: $t;
+  transform-origin: $t;
+}
+
+@mixin perspective($p) {
+  -webkit-perspective: $p;
+  -moz-perspective: $p;
+  perspective: $p;
+}
+
+@mixin center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
+}
+
+@mixin middle {
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+@mixin center {
+  position: absolute;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+@mixin gradient($from, $to, $horizontal: false) {
+  $def-dir: top;
+  $webkit-dir: linear, left top, left bottom;
+  $w3c-dir: to bottom;
+  $ie-dir: 0;
+
+  @if $horizontal == true {
+    $def-dir: left;
+    $webkit-dir: linear, left top, right top;
+    $w3c-dir: to right;
+    $ie-dir: 1;
+  }
+
+  background: $from; /* Old browsers */
+  background: -moz-linear-gradient($def-dir, $from 0%, $to 100%); /* FF3.6+ */
+  background: -webkit-gradient($webkit-dir, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient($def-dir, $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient($def-dir, $from 0%,$to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient($def-dir, $from 0%,$to 100%); /* IE10+ */
+  background: linear-gradient($w3c-dir, $from 0%,$to 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=$ie-dir ); /* IE6-9 */
+
+}
+
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+@mixin background-retina($class, $path, $retinapath, $width, $height) {
+  .#{$class} {
+    background-image: $path;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 1.5dppx) {
+    .#{$class} {
+      background-image: $retinapath;
+      -webkit-background-size: $width + px $height + px;
+      -moz-background-size: $width + px $height + px;
+      background-size: $width + px $height + px;
+    }
+  }
+}
+
+

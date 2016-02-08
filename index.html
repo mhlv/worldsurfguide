@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+  	<link href="css/misc.css" type="text/css" rel="stylesheet" />
+	<link href="css/layout.css" type="text/css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/gm-api.js"></script>
+	<script type="text/javascript" src="js/markerclusterer.min.js"></script>
+	<script type="text/javascript" src="js/gmaps.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.range.css">
+	<script src="js/jquery.range-min.js"></script>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="map" class="hidden"></div>
+		<p class="show_filters"><< Show filters</p>
+		<div class="filters_holder hidden">
+			<p class="hide_filters">Hide filters >></p>
+			<form>
+				<div class="filters">
+					<div class="f_feed">
+
+
+						<div class="filter_group">
+							<dl class="keawords">
+								<dt><label>Keawords:</label></dt>
+								<dd><input type="text" class="field" placeholder="e.g. continent, country, spot name..." /></dd>
+							</dl>
+						</div>
+						<div class="filter_group">
+							<dl class="range">
+								<dt><label>Season:</label></dt>
+								<dd><input type="hidden" class="slider-input-season" value="1,12" /></dd>
+							</dl>
+
+							<dl>
+								<dt>Outfit:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="ws_boardshorts" />
+											<label for="ws_boardshorts">Boardshorts</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="ws_12" />
+											<label for="ws_12">Wetsuit 1-2mm</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="ws_23" />
+											<label for="ws_23">Wetsuit 2-3mm</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="ws_34" />
+											<label for="ws_34">Wetsuit 3-4mm</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="ws_5" />
+											<label for="ws_5">Wetsuit 5mm +</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="filter_group">
+							<dl class="range">
+								<dt><label>Surfer level:</label></dt>
+								<dd><input type="hidden" class="slider-input-level" value="0,4" /></dd>
+							</dl>
+
+							<dl>
+								<dt>Boards:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_bodyboard" />
+											<label for="b_bodyboard">Bodyboard</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_fish" />
+											<label for="b_fish">Fish / Retro</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_short" />
+											<label for="b_short">Shortboard</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_fun" />
+											<label for="b_fun">Funboard / Minimal</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_long" />
+											<label for="b_long">Longboard</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="b_gun" />
+											<label for="b_gun">Gun / Semigun</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="filter_group">
+							<dl class="range">
+								<dt><label>Wave size:</label></dt>
+								<dd><input type="hidden" class="slider-input-wave-size" value="0,20" /></dd>
+							</dl>
+
+							<dl>
+								<dt>Wave direction:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="wd_left" />
+											<label for="wd_left">Left</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="wd_right" />
+											<label for="wd_right">Right</label>
+										</div>
+
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>Wave type:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_slow" />
+											<label for="wt_slow">Slow</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_fast" />
+											<label for="wt_fast">Fast</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_mellow" />
+											<label for="wt_mellow">Mellow</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_steep" />
+											<label for="wt_steep">Steep</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_hollow" />
+											<label for="wt_hollow">Hollow</label>
+										</div>
+
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>&nbsp;</dt>
+								<dd>
+									<div class="checkbox_group">
+
+										<div class="checkbox_item">
+											<input type="checkbox" id="wt_big" />
+											<label for="wt_big">Big wave</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>Bottom type:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="bt_reef" />
+											<label for="bt_reef">Reef</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="bt_rocks" />
+											<label for="bt_rocks">Rocks</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="bt_sand" />
+											<label for="bt_sand">Sand</label>
+										</div>
+
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="filter_group">
+							<dl>
+								<dt>Dangers:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_sea_urchins" />
+											<label for="d_sea_urchins">No sea urchins</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_shallow_bottom" />
+											<label for="d_shallow_bottom">No shallow bottom</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_jellyfish" />
+											<label for="d_jellyfish">No jellyfishes</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_live_reef" />
+											<label for="d_live_reef">No live reef</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_rips" />
+											<label for="d_rips">No rip currents</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_locals" />
+											<label for="d_locals">No localism</label>
+										</div>
+
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>&nbsp;</dt>
+								<dd>
+									<div class="checkbox_group">
+
+										<div class="checkbox_item">
+											<input type="checkbox" id="d_sharks" />
+											<label for="d_sharks">No sharks</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="filter_group">
+							<dl>
+								<dt>Infrastructure:</dt>
+								<dd>
+									<div class="checkbox_group">
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_toilet" />
+											<label for="i_toilet">Toilet</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_shower" />
+											<label for="i_shower">Shower</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_food" />
+											<label for="i_food">Cafes</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_lifeguard" />
+											<label for="i_lifeguard">Lifeguard / waterpatrol</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_carpark" />
+											<label for="i_carpark">Carpark</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_rental" />
+											<label for="i_rental">Board rental</label>
+										</div>
+										<div class="checkbox_item">
+											<input type="checkbox" id="i_school" />
+											<label for="i_school">Surf school</label>
+										</div>
+
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+					</div>
+				</div>
+				<div class="filter_buttons">
+					<input type="submit" value="Apply" class="btn" />
+					<input type="button" value="Clear" class="btn" />
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+</body>
+</html>

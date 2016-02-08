@@ -1,0 +1,176 @@
+@import "mixins";
+@import "vars";
+
+$deeb_blue: #091e30;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .show_filters {
+    position: absolute;
+    z-index: 30;
+    top: 20px;
+    right: 20px;
+    padding: 4px 8px 5px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.85);
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.filters_holder {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 40%;
+  min-width: 340px;
+  height: 100%;
+  background: rgba(255,255,255,0.85);
+  @include transition(width ease-out 300ms);
+  overflow: hidden;
+
+  &.hidden {
+    width: 0;
+    min-width: 0;
+  }
+
+  .hide_filters {
+    position: absolute;
+    z-index: 30;
+    top: 20px;
+    right: 20px;
+    padding: 4px 8px 5px;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .filters {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+
+    .f_feed {
+      padding: 20px 20px 0;
+
+      input.field {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 5px 3px;
+        width: 294px;
+        border: 1px solid $deeb_blue;
+        background: none;
+        border-radius: 4px;
+      }
+
+      .filter_group {
+        margin-bottom: 14px;
+      }
+
+      dl {
+        font-size: 0;
+
+        dd, dt {
+          display: inline-block;
+          vertical-align: top;
+          color: $deeb_blue;
+        }
+
+        &.range {
+          dt {
+            padding-top: 15px;
+          }
+          dd {
+            padding: 20px 0 12px;
+          }
+        }
+
+        &.keawords {
+          dd {
+            padding-top: 3px;
+          }
+        }
+
+        dt {
+          width: 110px;
+          margin-right: 20px;
+          font-size: 14px;
+          line-height: 14px;
+          padding-top: 12px;
+        }
+
+        dd {
+          font-size: 14px;
+          padding: 10px 0;
+          min-width: 330px;
+
+        }
+      }
+
+      .checkbox_group {
+        font-size: 0;
+        max-width: 330px;
+
+        .checkbox_item {
+          display: inline-block;
+          vertical-align: top;
+          width: 45%;
+          white-space: nowrap;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .filter_buttons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    border-top: 1px solid $deeb_blue;
+    font-size: 0;
+    white-space: nowrap;
+
+    .btn {
+      display: inline-block;
+      vertical-align: top;
+      border: 0 solid;
+      background: $deeb_blue;
+      color: #fff;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 4px 8px 5px;
+      margin-left: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+
+    }
+  }
+
+
+}
