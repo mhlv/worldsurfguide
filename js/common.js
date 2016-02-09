@@ -32,11 +32,15 @@ function loadResults (data) {
             var item = items[i];
 
             if (item.coords[0] != 0 && item.coords[1] != 0) {
+                var discr = '<h4>' + item.name + '</h4><p>some spot discription.</p><p><a href="#" class="iw_more_button">Button for full info</a></p>';
 
                 markers_data.push({
                     lat : item.coords[0],
                     lng : item.coords[1],
-                    title : item.name
+                    title : item.name,
+                    infoWindow: {
+                        content: discr
+                    }
                 });
             }
         }
@@ -104,6 +108,11 @@ $(document).ready(function(){
 
     initMap();
     initFilters();
+
+    $('.iw_more_button').live('click',function(e){
+        e.preventDefault();
+        console.log(13)
+    });
 	
 });
 
