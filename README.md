@@ -14,9 +14,18 @@
 добавить искусственные волны;
 решить, что делать с пиками;
 
+Описание API:
+getSpots(queryStrung) | post | - поисковой запрос, возвращает json со спотами, подходящими условиям запроса;
+createSpot(spotItem) | post | - добавляет спот; spotItem - json;
+updateSpot(spotItem) | post | редактирование спота
+deleteSpot(id) | post
+
+
 Примерная структура (требует обновления):
 
 параметры спота:
+id | int
+approved | boolean - параметр для вывода спота на пуюличную карту
 name | str
 suitable swell size | from: int, to: int
 best season (month - month) | from: int, to: int
