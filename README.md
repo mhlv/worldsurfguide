@@ -6,9 +6,25 @@
 карта с апрувленными спотами (для всех), с апрувленными и неапрувленными спотами и интерфейсом добавления спотов (для админов и редакторов);  
   
 ТуДу по серверной части:  
-стянуть базу спотов вот отсюда: wannasurf.com  
-натравить на эту базу редакторов;  
-Профит!  
+Итак, на первом этапе с wannasurf.com нужно забрать следующее:  
+* все споты с gps-координатами, их там должно быть 5816, но счетчик может и врать;
+* координаты взять только последние (на некоторых спотах есть их история), в базу положить в формате \[lat, lng\] / \[38.988218,-9.421071\];
+* Название спота;
+* раздел ACCESS на странице спота пропускаем;
+* параметр Experience (раздел SURF SPOT QUALITY на странице спота) в базу кладем по схеме:  
+All surfers - 0  
+Beginners wave - 1  
+Experienced surfers - 2  
+Pros or kamikaze only... - 3  
+Это идет в поле surfer level;  
+* В поле wave direction:  
+Right and left - 0  
+Right - 1  
+Left - 2;
+* из подраздела WAVE нужно взять все возможные значения параметров type, bottom, power; сделать для них карту, аналогичную двум предыдущим пунктам и положить в поля wave char., bottom char., wave power соответственно; возможно перечисление, так что кладем в виде массива.
+* из подраздела DANGERS - то же самое, дефисы перед пунктами, само собой, не нужны;
+* additional information, если есть, кидаем в spot description. На странице спота у этой информации есть подразделы, на них забиваем, просто разделяем двойным брейком (\<br \/\>\<br \/\>);
+* в keywords кладем хлебные крошки начиная со второго уровня (континент) в виде массива. AUSTRALIA & PACIFIC разбиваем на два киворда, к америкам добавляем просто america (\["central america", "america"\])
 
 ТуДу по структуре:  
 добавить искусственные волны;  
@@ -35,21 +51,21 @@ avg temp. winter | int
 suitable outfit | string (ws3, ws4, boardshorts, etc)  
 peaks | int  
 spot description | string  
-surfer level | collection (rookie, intermediate, pro etc.)  
+surfer level | int
+wave direction | array  
+wave char. | array 
+wave power | array
+bottom char. | int
+suitable boards | array  
 big wave spot | boolean  
 infrastructure | array  
 coordinates | lat + lon  
+dangers | array
 sharks rate | int  
-Text coords | str  
+keywords | str  
 
-параметры пика (peaks):  
-avg.  size | int  
-wave direction | string (left, right, a-frame)  
-wave char. | string (steep, mellow, etc.)  
-bottom char. | string (reef, sand, rocks, etc.)  
-suitable boards | collection  
 
-параметры инфраструктуры (bool):  
+параметры инфраструктуры (bool) *(пока пропускаем)*:  
 shower  
 toilet  
 food/drinks  
