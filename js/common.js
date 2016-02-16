@@ -61,6 +61,9 @@ function loadResults (data) {
     }*/
 }
 
+// gmap key
+// AIzaSyA7vdLm2fpGX7CiKxL5TqGITwaduXGtKU8
+
 function initMap(){
 
     var $MAP = $('#map');
