@@ -31,10 +31,15 @@ Left - 2;
 решить, что делать с пиками;  
 
 Описание API:  
-getSpots(queryStrung) | post | - поисковой запрос, возвращает json со спотами, подходящими условиям запроса;  
-createSpot(spotItem) | post | - добавляет спот; spotItem - json;  
-updateSpot(spotItem) | post | редактирование спота  
-deleteSpot(id) | post  
+* searchSpots(queryString) | post | - поисковой запрос, возвращает  array со спотами, подходящими условиям запроса; в объекте спота должны быть id, name, coords;  
+на счет формата запроса не уверен. Мне было бы удобно постить json с параметрами, типа  
+searchSpots({"surfer_level":\[0,1\], "wave_direction":0})  
+Но могу и queryString передавать обычный surfer_level=0,1&wave_direction=0  
+так что это на твое усмотрение.
+* getSpot(id) | post | возвращает объект со всеми параметрами спотов
+* createSpot(spotItem) | post | - добавляет спот; spotItem - json;  
+* updateSpot(spotItem) | post | редактирование спота  
+* deleteSpot(id) | post  
 
 
 Примерная структура (требует обновления):  
