@@ -8490,7 +8490,7 @@ Europe/Ireland/South_West/Dunworley
 Europe/Ireland/South_West/Donomore_Reefs
 Australia_Pacific/Australia/VIC/Melbourne_East/Hellicars_Hill__Merricks_Beach
 South_America/Brazil/Rio_Grande_do_Sul/Tres_Marias
-South_America/Brazil/Rio_de_Janeiro_Norte/GrussaA­
+South_America/Brazil/Rio_de_Janeiro_Norte/GrussaAÂ­
 South_America/Brazil/Santa_Catarina_North/Terceira_Pedra
 Europe/Italy/Mainland/Bagni_Roma
 South_America/Brazil/Rio_de_Janeiro_City/prainha_de_adA?o_e_eva
@@ -8520,7 +8520,7 @@ Asia/Indonesia/Sumatra_Islands/Jackals
 Africa/Cameroon/Kribi
 South_America/Colombia/Caribbean/Buritaca
 Europe/Sweden/Odd_Persson-bay
-Europe/Sweden/MA¶lle-hamn
+Europe/Sweden/MAÂ¶lle-hamn
 Central_America/Puerto_Rico/Punta_las_Marias
 South_America/Brazil/Santa_Catarina_North/Parcel
 South_America/Brazil/Santa_Catarina_North/SilA?ncio
@@ -8548,7 +8548,7 @@ Central_America/Nicaragua/Suicides
 Central_America/Nicaragua/Pipes
 Central_America/Nicaragua/Miramar
 Central_America/Nicaragua/Padangs
-Central_America/St_Barthelemy/le_bec_a_chA©ri
+Central_America/St_Barthelemy/le_bec_a_chAÂ©ri
 Central_America/Nicaragua/No_Names
 Central_America/St_Barthelemy/Washing_Machine
 Central_America/Nicaragua/Asuchio
@@ -8577,13 +8577,13 @@ Middle_East/Oman/Banda_al_Saqlah
 Europe/Italy/sicily/Mondello
 Australia_Pacific/Australia/NSW/South_Coast/Meroo_Headland_Wedge
 Africa/Seychelles/Mahe/Anse_Gaulette
-Africa/Seychelles/La_Digue/Anse_SevA©re
+Africa/Seychelles/La_Digue/Anse_SevAÂ©re
 Africa/Seychelles/Mahe/Anse_Soleil
 Australia_Pacific/Australia/SA/York_Peninsula/The_Pines
 Australia_Pacific/Australia/VIC/Melbourne_East/yellow_buoys
 Africa/Seychelles/La_Digue/Anse_Banane
 Asia/Sri_Lanka/Plantations
-South_America/Brazil/Santa_Catarina/PA­er_da_Petrobras
+South_America/Brazil/Santa_Catarina/PAÂ­er_da_Petrobras
 South_America/Argentina/North/la_punta___puerto_
 Australia_Pacific/New_Zealand/New_Zealand_SI/NE_Coast/Tuapeka_Point
 North_America/USA/Gulf_Coast/Florida/Navarre_Beach_Pier
@@ -8605,7 +8605,7 @@ Europe/Spain/Mediterranean/Cala_Finestrat
 Europe/Spain/Mediterranean/Puerto_Benidorm
 Europe/France/Gironde/Le_Petit_Nice
 Middle_East/Lebanon/pierre_and_friends
-Europe/France/Brittany_South/Audierne_-_La_JetA©e
+Europe/France/Brittany_South/Audierne_-_La_JetAÂ©e
 South_America/Brazil/Rio_de_Janeiro_City/Forte_de_Copacabana
 South_America/Brazil/Rio_de_Janeiro_City/Laje_do_Dramin
 Africa/Ghana/Cape_Three_Points
@@ -8613,7 +8613,7 @@ Europe/Bulgaria/Melnitza
 Asia/Philippines/Mindanao/Bobon
 Africa/South_Africa/South_George/Stinky_Pits_
 South_America/Brazil/Rio_de_Janeiro_City/Shock
-Europe/Italy/Mainland/46A°
+Europe/Italy/Mainland/46AÂ°
 Europe/Spain/Mediterranean/Playa_del_Bol
 North_America/USA/South_East/Georgia/St__Simons_Island__GA_
 Europe/Italy/Sicily_Sardinia/Santa_Reparata
@@ -8638,7 +8638,7 @@ Australia_Pacific/Palau/Santa_Maria_Anguar
 Europe/Canary/Fuerte_Ventura/campo_de_futbol
 Australia_Pacific/Australia/QLD/Sunshine_Coast/Murray_s_Left
 North_America/USA/South_East/North_Carolina/Fort_Fisher
-South_America/Brazil/Sao_Paulo_North_Coast/MassaguaA§u
+South_America/Brazil/Sao_Paulo_North_Coast/MassaguaAÂ§u
 Central_America/British_Virgin/Brewers_Bay
 Europe/Spain/Mediterranean/TORRE_VALENTINA
 South_America/Peru/North/Puerrup
@@ -8736,7 +8736,7 @@ North_America/USA/Hawaii/Maui/Baldwin_beach
 Central_America/Virgin_Islands/carambola
 Australia_Pacific/Australia/NSW/Newcastle/Wreck_Beach_
 Central_America/St_Barthelemy/Anse_des_Cayes
-Central_America/St_Barthelemy/Anse_des_LA©zards
+Central_America/St_Barthelemy/Anse_des_LAÂ©zards
 Central_America/St_Barthelemy/La_Tortue
 North_America/USA/California/Santa_Barbara/Skunk_Point
 Central_America/St_Barthelemy/Petite_Anse
@@ -8796,11 +8796,11 @@ Central_America/Nicaragua/The_Finca
 Europe/Ireland/West/BarrtrA?
 North_America/USA/North_West/Lunch-Counter_rapid
 Europe/Canary/Tenerife/PLAYA_ARENA
-Europe/France/Vendee/ParA©e_PrA©neau
+Europe/France/Vendee/ParAÂ©e_PrAÂ©neau
 Central_America/Mexico/Sinaloa-Nayarit/Anclote
 Australia_Pacific/Australia/NSW/Coal_Coast/Lassos
 Central_America/Mexico/Baja_Sur/Seamus_Point
-Middle_East/Turkey/son_A§are
+Middle_East/Turkey/son_AÂ§are
 Europe/Italy/Sicily_Sardinia/Porto_Paglia
 South_America/Brazil/Sao_Paulo_South_Coast/Praia_de_Pernambuco__Pernambuco_Beach__in_Guaruja_
 Europe/Portugal/North_Porto/Esmoriz_praia_da_barra_e_praia_velha
@@ -8860,7 +8860,7 @@ Asia/Japan/Kyushu/Tanegashima-Island/Hotel_Mae
 South_America/Brazil/Para/marahu
 Asia/Japan/Kyushu/Tanegashima-Island/Toudaishita
 Europe/Cyprus/Yellows
-Africa/Benin/la_MA©duse
+Africa/Benin/la_MAÂ©duse
 North_America/USA/Alaska/White_Alice
 North_America/USA/Alaska/Zeto_Point_-_Adak
 Europe/France/Basque_Country/Anglet_-_Le_club
@@ -8906,7 +8906,7 @@ Europe/Cyprus/Caretta_Caretta
 Australia_Pacific/Solomon/Kumars
 Africa/Benin/La_routes_des_pA?ches
 Australia_Pacific/Australia/WA/Margaret_River_North/Port_Geographe__Busseton
-Africa/Togo/LomA©_Rivage
+Africa/Togo/LomAÂ©_Rivage
 Africa/Mozambique/pomene
 Africa/Namibia/Donkey_Bay
 Africa/Tunisia/Meloula
@@ -8933,7 +8933,7 @@ North_America/USA/North_East/Long_Island_NY/BP
 South_America/Brazil/Bahia_Sul/Pedra_do_Moleque
 North_America/USA/California/San_Diego_County/Warm_Water_Jetties
 Australia_Pacific/Australia/NSW/North/Missingham_Bridge
-South_America/Brazil/Paraiba_Pernambucco/Pedra_de_XarA©u
+South_America/Brazil/Paraiba_Pernambucco/Pedra_de_XarAÂ©u
 Australia_Pacific/Papua_New_Guinea/Go_Go_s
 Central_America/Panama/Corto_Circuito
 Africa/Mauritius/Maconde
@@ -8959,7 +8959,7 @@ Africa/Cape_Verde/Praia_do_Chaves
 Central_America/Mexico/Guerrero/La_Bonfil
 South_America/Brazil/Sao_Paulo_North_Coast/Guaratuba
 Australia_Pacific/Australia/NSW/Mid_North_Coast/Oxleys_Reef
-Europe/France/Landes/Soustons_-_Plage_de_l_ocA©an
+Europe/France/Landes/Soustons_-_Plage_de_l_ocAÂ©an
 Middle_East/Qatar/dukhan_beach
 Australia_Pacific/Australia/QLD/Far_North_West/Balding_Bay
 Asia/Indonesia/Sumbawa/Tropical_s
@@ -9026,7 +9026,7 @@ Asia/Japan/Kyushu/Tanegashima-Island/Nagahama_Reef
 Asia/Japan/Kyushu/Tanegashima-Island/Sumiyoshi
 South_America/Brazil/Santa_Catarina_North/Syphodys
 South_America/Brazil/Santa_Catarina_North/ilha_do_grants
-South_America/Brazil/Santa_Catarina_North/molhe_de_PiA§arras
+South_America/Brazil/Santa_Catarina_North/molhe_de_PiAÂ§arras
 South_America/Brazil/Santa_Catarina_North/barra_de_Itajuba
 Asia/Japan/Kyushu/Hitotsuse
 Asia/Japan/Kyushu/Isekagaku
@@ -9116,7 +9116,7 @@ South_America/Chile/Sur/Santos_del_Mar
 Australia_Pacific/Australia/VIC/Melbourne_West/Spout_Creek
 Europe/Spain/Galicia/O_Pindo
 Australia_Pacific/Australia/NSW/Sydney_North/Fairlight_Pool
-South_America/Chile/Sur/Playa_3_PeA±as
+South_America/Chile/Sur/Playa_3_PeAÂ±as
 South_America/Chile/Sur/Conchilla
 Australia_Pacific/Australia/NSW/Sydney_North/luzas
 South_America/Chile/Central_Santiago/Salinas_Spa
@@ -9155,7 +9155,7 @@ North_America/USA/California/Santa_Barbara/More_Mesa
 Africa/Tanzania/Ruvu
 Asia/East_Timor/Dili_Rock
 Asia/East_Timor/CRISTO_REI_DILI
-South_America/Brazil/Espirito_Santo/Coral_do_CA©u
+South_America/Brazil/Espirito_Santo/Coral_do_CAÂ©u
 Africa/Morocco/North/Ain_Diab_Porte_15
 South_America/Ecuador/Casa_Blanca
 Australia_Pacific/Australia/NSW/Sydney_North/curl_curl_shoz
